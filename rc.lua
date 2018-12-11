@@ -2333,11 +2333,11 @@ awful.key({ modkey, }, "`", customization.func.system_lock),
 
 awful.key({ modkey, }, "Home", customization.func.system_lock),
 
-awful.key({ modkey, }, "End", customization.func.system_suspend),
+awful.key({ modkey,	    "Control", "Shift" }, "End", customization.func.system_suspend),
 
-awful.key({ modkey,  "Mod1" }, "Home", customization.func.system_hibernate),
+--awful.key({ modkey,  "Mod1" }, "Home", customization.func.system_hibernate),
 
-awful.key({ modkey,  "Mod1" }, "End", customization.func.system_hybrid_sleep),
+--awful.key({ modkey,  "Mod1" }, "End", customization.func.system_hybrid_sleep),
 
 awful.key({ modkey, }, "Insert", customization.func.system_reboot),
 
